@@ -1,0 +1,37 @@
+:host {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  width: 49%;
+
+  & > * {
+    box-sizing: border-box;
+  }
+}
+
+.synonym {
+  width: 100%;
+  flex-grow: 1;
+  background-color: #fff;
+  border: 1px solid #e4dede;
+  padding: 20px;
+
+  &-title {
+    text-align: center;
+  }
+
+  &-list {
+
+  }
+
+  &-item {
+    margin-bottom: 4px;
+
+    &:hover {
+      cursor: pointer;
+      color: #ffa500;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<div class="synonym">
+  <h2 class="synonym-title">Synonym list</h2>
+  <ul class="synonym-list" *ngIf="synonymItem">
+    <li class="synonym-item" *ngFor="let item of synonymItem" (click)="applySyn(item.word)">{{item?.word}}</li>
+  </ul>
+  <ng-container *ngIf="synonymItem; else preloadText">
+    <span *ngIf="synonymItem.length == 0">{{errorText}}</span>
+  </ng-container>
+  <ng-template #preloadText>
+    Click on a word to get synonyms.
+  </ng-template>
+</div>

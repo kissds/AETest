@@ -1,0 +1,23 @@
+:host {
+  background-color: #fff;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.format-actions {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+
+  .bold-active, .italic-active, .underline-active {
+    color: #ffa500;
+    background-color: #84bfff;
+  }
+}
+
+button + button {
+  margin-left: 5px;
+}
